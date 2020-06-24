@@ -5,17 +5,26 @@
 }
 
 body {
-  font-size: 14px;
+  font: 14px sans-serif;
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 div {
-  width: 100%;
-  margin: 20px;
+  /*width: 100%;*/
+  background-color: #272727;
+  opacity: 0.9;
+  color: #fff;
+  margin:20px;
+  padding: 5px;
 }
 
 div li {
   display: flex;
   align-items: center;
+  margin-top: 15px;
 }
 
 div li + li {
@@ -31,9 +40,21 @@ button {
   margin-top: 15px;
   font-weight: bold;
   font-size: 14px;
+  border-radius: 5px;
 }
 
 div li button {
   margin: 0 15px;
   background: #ca4949;
+}
+
+div li span{
+  padding: 5px 5px;
+  background-color: #000;
+  border-radius: 5px;
+  width: 25%;
+}
+
+div li span + span{
+  margin-left: 10px;
 }
